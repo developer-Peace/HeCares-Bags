@@ -1,0 +1,302 @@
+/*####### Defaults ######*/
+nav,
+header,
+footer {
+	display: block;
+}
+
+body {
+	margin: 0;
+	line-height: 1;
+	background-color: aliceblue;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 4px
+	padding-bottom: 4px;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row::after{
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.col-1 {width: 8.33% }
+.col-2 {width: 16.66% }
+.col-3 {width: 25% }
+.col-4 {width: 33.33% }
+.col-5 {width: 41.66% }
+.col-6 {width: 50% }
+.col-7 {width: 58.33% }
+.col-8 {width: 66.66% }
+.col-9 {width: 75% }
+.col-10 {width: 83.33% }
+.col-11 {width: 91.66 }
+.col-12 {width: 100% }
+
+
+/*####### Nav Bar ########*/
+
+nav.container {
+	background-color: aquamarine; 
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	position: sticky;
+	min-height: 50px;
+}
+
+h2.brandName > a {
+  text-decoration: none;
+	color: dimgray;
+	font-size: 50px;
+	font-weight: 1200px;
+	font-family: 'Titillium Web', sans-serif;
+	margin-top: 0;
+}
+
+hr.divider {
+  width:100%;
+  margin-top: 40px;
+  display: none;
+}
+
+ul.topNavBar {
+  margin: auto;
+}
+
+ul.topNavBar li {
+	list-style: none;
+	display: inline;
+	
+}
+
+ul.topNavBar li.hideMobile a {
+	text-decoration: none;
+	padding: 12px;
+	margin-left: 1%;
+	font-size: 20px;
+	text-transform: uppercase;
+	min-height: 16px;
+	display: inline;
+	color: black;
+	text-align: center;
+	border: 1px solid white;
+	box-shadow: 1px 1px 3px 2px azure;
+}
+
+ul.topNavBar li.hideMobile a:hover {
+	font-size:2rem;
+	background-color: azure;
+	color: cadetblue;
+}
+
+ul.topNavBar li.showMobile a {
+  text-decoration: none;
+	border: 2px solid darkslategray;
+	border-radius: 3px;
+	padding: 3px;
+	width: 12px;
+	color: dimgrey;
+	font-weight: 700px;
+	font-size: 20px;
+	display: none;
+}
+
+#sectionGradient {
+	background: aquamarine;
+	background: -webkit-linear-gradient(azure, aquamarine );
+	background: -o-linear-gradient(azure, aquamarine );
+	background: -moz-linear-gradient(azure, aquamarine );
+	background: linear-gradient(azure, aquamarine );
+}
+
+.catImage {
+	width: 85%;
+	display: block;
+	margin: auto;
+	margin-top: 6px;
+	margin-bottom :  6%;
+	box-shadow: 2px 2px grey;
+	transition-timing-function: ease-in;
+	transition-delay: 10s;
+	
+}
+
+div.banner {
+	padding-left: 5%;
+	padding: 0;
+}
+
+.durability {
+	color: #1a2557;
+	font-size: 3rem;
+	font-family: ;
+	margin: 0;
+	padding: 3;
+}
+
+.classy {
+	color: #1a2763;
+	padding: 3;
+}
+
+.floatCta {
+	display: block;
+	color: #a37429;
+}
+
+#section-2 {
+  border: 1px solid gray;
+  margin-top: 8px;
+  box-shadow: 1px 1px 8px 2px dimgray;
+  border-radius: 3px;
+}
+
+img.displayImage {
+  width: 92%;
+  margin: 5% 0% 0% 4%;
+}
+
+p.priceTag {
+  color: gray;
+  font-style: italic;
+  font-size: 1%;
+  margin: 0;
+  color: aquamarine;
+}
+
+span.span {
+  font-size: 15px;
+}
+
+footer#footer {
+	background-color: #666;
+	padding-bottom: 2px;
+}
+ul.footerList {
+  margin: 0;
+}
+
+h2.footerHeader {
+  font-size: 25px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  color: aquamarine;
+}
+
+ul.footerList > li {
+  list-style-type: none;
+  padding: 8px;
+  margin:auto;
+}
+
+ul.footerList > li > a {
+  text-decoration: none;
+  font-size: 15px;
+	font-family: serif;
+  margin-top: 0;
+  color: azure;
+}
+
+div.copy p {
+  margin-top: 10px;
+  line-height: 4px;
+  font-size: 12px;
+	text-align: center;
+  color: #051417;
+}
+
+
+
+/*####### Mobile Screens ######*/
+@media screen and (max-width: 900px) {
+	
+	/*########Mobile Nav Bar #######*/
+	div.bName {
+	  margin:0;
+	}
+	h2.brandName > a {
+  	font-size: 30px;
+  	margin: 0;
+  	position: absolute;
+  	top: 12px;
+  	left: 14px;
+	}
+	
+	div.menuList {
+	  width: 100%;
+	}
+	
+	ul.topNavBar li.hideMobile a {
+		display: none;
+	}
+	
+	ul.topNavBar li.showMobile a {
+    display: block;
+  	position: absolute;
+  	top: 12px;
+  	right: 12px;
+	}
+	
+	ul.topNavBar.navBarMobile hr.divider,
+	ul.topNavBar.navBarMobile li.hideMobile a {
+  	display: block;
+	}
+	
+  .col-6.section-1 {
+    width: 100%;
+  }
+  
+  .durability,
+  .classy {
+    font-size: 1.5rem;
+  }
+	
+	h2.footerHeader {
+    font-size: 10px;
+    margin-left: 40px;
+  }
+
+  ul.footerList > li {
+    padding: 1px;
+  }
+	
+  ul.footerList > li > a {
+    font-size: 12px;
+  }
+
+  
+}
+
+
+/*####### Mobile Screens ######*/
+@media screen and (max-width: 450px) {
+  ul.footerList > li > a {
+    font-size: 8px;
+  }
+	
+	div.copy p {
+  line-height: 1px;
+  font-size: 9px;
+	}
+	
+	
+}
+
+
+/*######## Font Initiation########*/
+@font-face {
+  font-family: "Titillium Web";
+  src: url("fonts/Titillium_Web/TitilliumWeb-Regular.tff") format("truetype");
+}
