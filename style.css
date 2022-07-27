@@ -8,13 +8,13 @@ footer {
 body {
 	margin: 0;
 	line-height: 1;
-	background-color: aliceblue;
+	background-color: #656968;
 }
 
 .container {
 	width: 100%;
 	margin: auto;
-	padding-top: 4px
+	padding-top: 4px;
 	padding-bottom: 4px;
 }
 
@@ -48,27 +48,38 @@ body {
 /*####### Nav Bar ########*/
 
 nav.container {
-	background-color: aquamarine; 
+	background-color: #11221c; 
 	overflow: hidden;
 	width: 100%;
 	margin: 0;
-	position: sticky;
+	position: -webkit-sticky;
+	position:sticky;
+	top:0;
 	min-height: 50px;
 }
 
+h2.brandName {
+	margin: 4px;
+}
+
 h2.brandName > a {
+	display: inline;
   text-decoration: none;
-	color: dimgray;
-	font-size: 50px;
+	color: #7a7373;
+	font-size: 40px;
 	font-weight: 1200px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-top: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 hr.divider {
   width:100%;
   margin-top: 40px;
   display: none;
+}
+
+div.menuList {
+	margin-left:auto;
+	align-items: center;
 }
 
 ul.topNavBar {
@@ -84,41 +95,34 @@ ul.topNavBar li {
 ul.topNavBar li.hideMobile a {
 	text-decoration: none;
 	padding: 12px;
-	margin-left: 1%;
-	font-size: 20px;
 	text-transform: uppercase;
 	min-height: 16px;
 	display: inline;
-	color: black;
+	color: #fffbfb;
 	text-align: center;
-	border: 1px solid white;
-	box-shadow: 1px 1px 3px 2px azure;
 }
 
 ul.topNavBar li.hideMobile a:hover {
-	font-size:2rem;
-	background-color: azure;
-	color: cadetblue;
+	font-size:1.1rem;
+	background-color: #c1c9c9;
+	color: #4c7c7e;
 }
 
 ul.topNavBar li.showMobile a {
-  text-decoration: none;
-	border: 2px solid darkslategray;
-	border-radius: 3px;
-	padding: 3px;
+  	text-decoration: none;
 	width: 12px;
-	color: dimgrey;
+	color: #d7dbdb;
 	font-weight: 700px;
 	font-size: 20px;
 	display: none;
 }
 
 #sectionGradient {
-	background: aquamarine;
-	background: -webkit-linear-gradient(azure, aquamarine );
-	background: -o-linear-gradient(azure, aquamarine );
-	background: -moz-linear-gradient(azure, aquamarine );
-	background: linear-gradient(azure, aquamarine );
+	background: #656968;
+	background: -webkit-linear-gradient(#2c3330, #656968 );
+	background: -o-linear-gradient(#2c3330, #656968 );
+	background: -moz-linear-gradient(#2c3330, #656968 );
+	background: linear-gradient(#2c3330, #656968);
 }
 
 .catImage {
@@ -141,7 +145,7 @@ div.banner {
 .durability {
 	color: #1a2557;
 	font-size: 3rem;
-	font-family: ;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 0;
 	padding: 3;
 }
@@ -154,6 +158,10 @@ div.banner {
 .floatCta {
 	display: block;
 	color: #a37429;
+}
+
+hr.sectioner {
+	display: none;
 }
 
 #section-2 {
@@ -181,7 +189,7 @@ span.span {
 }
 
 footer#footer {
-	background-color: #666;
+	background-color: #414242;
 	padding-bottom: 2px;
 }
 ul.footerList {
@@ -234,10 +242,15 @@ div.copy p {
   	left: 14px;
 	}
 	
-	div.menuList {
+	div.col-6.menuList {
 	  width: 100%;
+	  margin: 0;
 	}
 	
+	ul.topNavBar {
+		width: 100%;
+		margin-top: 30px;
+	}
 	ul.topNavBar li.hideMobile a {
 		display: none;
 	}
@@ -245,11 +258,10 @@ div.copy p {
 	ul.topNavBar li.showMobile a {
     display: block;
   	position: absolute;
-  	top: 12px;
+  	top: 15px;
   	right: 12px;
 	}
 	
-	ul.topNavBar.navBarMobile hr.divider,
 	ul.topNavBar.navBarMobile li.hideMobile a {
   	display: block;
 	}
@@ -262,6 +274,12 @@ div.copy p {
   .classy {
     font-size: 1.5rem;
   }
+
+	hr.sectioner {
+		display: block;
+	}
+
+	
 	
 	h2.footerHeader {
     font-size: 10px;
@@ -282,13 +300,13 @@ div.copy p {
 
 /*####### Mobile Screens ######*/
 @media screen and (max-width: 450px) {
-  ul.footerList > li > a {
-    font-size: 8px;
-  }
+	ul.footerList > li > a {
+		font-size: 8px;
+	}
 	
 	div.copy p {
-  line-height: 1px;
-  font-size: 9px;
+		line-height: 1px;
+		font-size: 9px;
 	}
 	
 	
