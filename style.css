@@ -235,11 +235,11 @@ div.copy p {
 	  margin:0;
 	}
 	h2.brandName > a {
-  	font-size: 30px;
-  	margin: 0;
-  	position: absolute;
-  	top: 12px;
-  	left: 14px;
+		font-size: 30px;
+		margin: 0;
+		position: absolute;
+		top: 12px;
+		left: 14px;
 	}
 	
 	div.col-6.menuList {
