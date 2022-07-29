@@ -11,21 +11,21 @@ body {
 	background-color: #656968;
 }
 
-.container {
+.mcontainer {
 	width: 100%;
 	margin: auto;
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
 
-.row {
+.mrow {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.row::after{
+.mrow::after{
 	display: table;
 	clear: both;
 	content: "";
@@ -47,7 +47,7 @@ body {
 
 /*####### Nav Bar ########*/
 
-nav.container {
+nav.mcontainer {
 	background-color: #11221c; 
 	overflow: hidden;
 	width: 100%;
@@ -178,18 +178,38 @@ img.displayImage {
 
 p.priceTag {
   color: gray;
-  font-style: italic;
   font-size: 1%;
-  margin: 0;
-  color: aquamarine;
+	display: inline;
+	float: right;
+  line-height: 10px;
+  color: #f70808;
 }
 
 span.span {
   font-size: 15px;
 }
 
+.mcontainer#sectionSocial {
+	margin: auto;
+	width: 70%;
+	align-items: center;
+}
+
+.mcontainer#sectionSocial > ul {
+	display: block;
+}
+
+.mcontainer#sectionSocial > ul > li {
+	display: inline;
+}
+
+.mcontainer#sectionSocial > ul > li > a {
+	text-decoration: none;
+	padding: 4px;
+}
+
 footer#footer {
-	background-color: #414242;
+	background-color: #4d4a4a;
 	padding-bottom: 2px;
 }
 ul.footerList {
@@ -200,7 +220,7 @@ h2.footerHeader {
   font-size: 25px;
   margin-left: 40px;
   margin-bottom: 0px;
-  color: aquamarine;
+  color: #2f6e59;
 }
 
 ul.footerList > li {
@@ -214,7 +234,7 @@ ul.footerList > li > a {
   font-size: 15px;
 	font-family: serif;
   margin-top: 0;
-  color: azure;
+  color: #ffffff;
 }
 
 div.copy p {
@@ -299,7 +319,7 @@ div.copy p {
 
 
 /*####### Mobile Screens ######*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
 	ul.footerList > li > a {
 		font-size: 8px;
 	}
@@ -308,7 +328,12 @@ div.copy p {
 		line-height: 1px;
 		font-size: 9px;
 	}
-	
+
+
+	.col-4,
+	.col-8 {
+		width: 100%;
+	}
 	
 }
 
